@@ -1,0 +1,55 @@
+{
+  "name": "find-regexp-beginning",
+  "version": "1.0.0",
+  "description": "Find character which could be on regexp beginning",
+  "keywords": [
+    "regexp",
+    "regex",
+    "regular",
+    "expressions",
+    "find",
+    "first",
+    "analysis",
+    "parser"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "rollup -c rollup.config.js",
+    "lint": "eslint ./lib",
+    "test": "mocha ./tests/**/*Spec.js",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- tests/*Spec.js -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+  },
+  "author": "Dawid Rusnak <dawid@drcode.pl>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rangoo94/find-regexp-beginning.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rangoo94/find-regexp-beginning/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ret": "^0.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "babelrc-rollup": "^3.0.0",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.17.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "expect.js": "^0.3.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.0",
+    "rollup": "^0.54.0",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "rollup-plugin-uglify": "^2.0.1"
+  }
+}
